@@ -7,20 +7,18 @@ switch (S) {
             if (height<1.6) {
             result="Short";}
             else if (height<1.75){
-                result="Normal"}
+                result="Normal";}
             else {
-                result="Tall"
-            }
-        break;
+                result="Tall";
+            }break;
         case 'M':
              if (height<1.7) {
             result="Short";}
             else if (height<1.85){
-                result="Normal"}
+                result="Normal";}
             else {
-                result="Tall"
-            }
-        break;
+                result="Tall";
+            }break;
     }
     return result;
     
