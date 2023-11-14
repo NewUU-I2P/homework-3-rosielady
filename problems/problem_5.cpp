@@ -14,7 +14,7 @@ float problemSolution5(float x, float y, char operation) {
          result=(x/y);
          break;
       default:
-         result="Not found operation!"
+         result="Not found operation!";
    }
 
    return result;
