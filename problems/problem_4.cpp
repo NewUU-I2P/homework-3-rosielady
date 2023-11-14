@@ -35,7 +35,7 @@ if(macAddress[2]==E){
 else{
     result="Multicast";
     }
-}
+
     
 
     
