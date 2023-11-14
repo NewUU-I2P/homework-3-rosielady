@@ -3,8 +3,41 @@
 
 std::string problemSolution4(const std::string &macAddress){
 std::string result;
-    // write your code here
+if (macAddress.substr(0, 2)=="FF"){
+    result="Broadcast";}
+    break;
 
-    // make use of control flow statements
-    // return result;
+if(macAddress[1]==0){
+    result="Unicast";
+    }
+if(macAddress[1]==2){
+    result="Unicast";
+    }
+
+if(macAddress[1]==4){
+    result="Unicast";
+    }
+if(macAddress[1]==6){
+    result="Unicast";
+    }
+if(macAddress[1]==8){
+    result="Unicast";
+    }
+if(macAddress[2]==A){
+    result="Unicast";
+    }    
+if(macAddress[2]==C){
+    result="Unicast";
+    }    
+if(macAddress[2]==E){
+    result="Unicast";
+    }    
+else{
+    result="Multicast";
+    }
+}
+    
+
+    
+    return result;
 }
