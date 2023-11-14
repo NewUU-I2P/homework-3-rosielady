@@ -5,39 +5,36 @@ std::string problemSolution4(const std::string &macAddress){
 std::string result;
 if (macAddress.substr(0, 2)=="FF"){
     result="Broadcast";}
-    break;
+    
 
-if(macAddress[1]==0){
+else if(macAddress[1]=='0'){
     result="Unicast";
     }
-if(macAddress[1]==2){
+else if(macAddress[1]=='2'){
     result="Unicast";
     }
 
-if(macAddress[1]==4){
+else if(macAddress[1]=='4'){
     result="Unicast";
     }
-if(macAddress[1]==6){
+else if(macAddress[1]=='6'){
     result="Unicast";
     }
-if(macAddress[1]==8){
+else if(macAddress[1]=='8'){
     result="Unicast";
     }
-if(macAddress[2]==A){
+else if(macAddress[1]=='A'){
     result="Unicast";
     }    
-if(macAddress[2]==C){
+else if(macAddress[1]=='C'){
     result="Unicast";
     }    
-if(macAddress[2]==E){
+else if(macAddress[1]=='E'){
     result="Unicast";
     }    
 else{
     result="Multicast";
     }
-
-    
-
     
     return result;
 }
